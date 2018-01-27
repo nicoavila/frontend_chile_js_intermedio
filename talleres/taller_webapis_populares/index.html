@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>WebAPIS Populares</title>
+    <link rel="stylesheet" href="node_modules/bulma/css/bulma.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="topbar"></div>
+    <div class="container">
+      <div class="columns">
+        <div class="column is-4">
+          <!-- CANVAS -->
+          <div class="card">
+            <div class="card-content">
+              <h3 class="subtitle">Canvas</h3>
+              <canvas id="areaDibujo" width="300px" height="300px"></canvas>
+            </div>
+          </div>
+        </div>
+
+        <div class="column is-4">
+          <!-- LOCAL STORAGE -->
+          <div class="card">
+            <div class="card-content">
+              <h3 class="subtitle">Local Storage</h3>
+              <table id="tabla_tareas" class="table is-bordered is-fullwidth">
+                <tbody></tbody>
+              </table>
+              <hr>
+              <div class="field has-addons">
+                <div class="control">
+                  <input class="input" type="text" id="tarea" placeholder="Agregar tarea...">
+                </div>
+                <div class="control">
+                  <a onclick="guardaTarea()" class="button is-info">Agregar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column is-4">
+          <!-- GEO LOCACIÓN -->
+          <div class="card">
+            <div class="card-content">
+              <h3 class="subtitle">Geolocación</h3>
+              <table id="tabla_geolocacion" class="table is-bordered is-fullwidth" style="display:none;">
+                <thead>
+                  <tr>
+                    <th>Lat.</th>
+                    <th>Lng.</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="lat"></td>
+                    <td class="lng"></td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <a onclick="geolocaliza()" class="button is-large is-link">Geolocalizame!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

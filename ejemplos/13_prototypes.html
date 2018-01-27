@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Ejemplo XX - Prototypes</title>
+  </head>
+  <body>
+    <script>
+      var Auto = function(nombre, puertas, encendido = false) {
+        this.nombre = nombre;
+        this.puertas = puertas;
+        this.ruedas = 4;
+        this.encendido = encendido
+      }
+
+      var auto1 = new Auto('Aveo', 4);
+      console.log(auto1);
+    </script>
+  </body>
+</html>

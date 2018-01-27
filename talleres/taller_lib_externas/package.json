@@ -1,0 +1,18 @@
+{
+  "name": "taller_lib_externas",
+  "version": "1.0.0",
+  "description": "Taller JavaScript Intermedio - Avanzado: Usando librerías externas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nicolas Avila <nicolasavila.a@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "bulma": "^0.6.2",
+    "chart.js": "^2.7.1"
+  },
+  "devDependencies": {
+    "http-server": "^0.11.1"
+  }
+}

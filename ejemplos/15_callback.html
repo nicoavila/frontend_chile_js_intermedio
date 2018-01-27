@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Ejemplo XX - Callback</title>
+  </head>
+  <body>
+
+    <script>
+      
+      let f1 = function() {
+        console.log("Hola amiguines! Soy la función número 1");
+      }
+
+      let f2 = function(callback) {
+        console.log("Hola amiguines! Soy la función número 2");
+        callback();
+      }
+
+      f2(f1);
+    </script>
+  </body>
+</html>

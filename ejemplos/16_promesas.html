@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Ejemplo XX - Promesas</title>
+  </head>
+  <body>
+
+    <script>
+      
+      let miSuperPromesa = new Promise(function(resolve, reject){
+        console.log("La ejecutamos...");
+        setTimeout(function(){
+          resolve({mensaje: 'Promesa resuelta <3'});
+        }, 3000);
+      });
+
+      miSuperPromesa.then(function(datos){
+        console.log(datos);
+      }).catch(function(error){
+        console.error(error);
+      });
+    </script>
+  </body>
+</html>

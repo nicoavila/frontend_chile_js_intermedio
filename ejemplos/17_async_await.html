@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Ejemplo XX - Async / Await</title>
+  </head>
+  <body>
+    <script>
+      
+      function prepararCafe() {
+        console.log('Preparando café...');
+        return new Promise((resolve) => {
+          setTimeout(function(){
+            resolve('Café listo! ☕');
+          }, 5000);
+        });
+      }
+
+      async function partirDia() {
+        let cafe = prepararCafe();
+        return await cafe;
+      }
+
+      partirDia().then(function(cafe){
+        console.log(cafe);
+        console.log("Ahora si puedo partir mi día! :)");
+      })
+    </script>
+  </body>
+</html>

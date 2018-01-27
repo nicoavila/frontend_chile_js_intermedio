@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Ejemplo XX - Scope</title>
+  </head>
+  <body>
+
+    <script>
+      function miFuncion(a) {
+        var b = a * 2;
+        function miFuncion2(c) {
+          console.log(a, b, c);
+        }
+        miFuncion2(b * 3);
+      }
+      miFuncion(2);
+    </script>
+  </body>
+</html>

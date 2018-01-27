@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Ejemplo XX - Clases</title>
+  </head>
+  <body>
+
+    <img src="https://78.media.tumblr.com/04753fa5acaf6473435265acf5a59297/tumblr_oiwgk0T52t1udh5n8o1_500.gif" alt="Dicaprio">
+
+    <script>
+      
+      let request = new XMLHttpRequest();
+      request.open('GET', 'https://mindicador.cl/api', true);
+      request.onload = function() {
+        if (request.status >= 200 && request.status < 400) {
+          let data = JSON.parse(request.responseText);
+          console.log(data);
+        } else {
+          console.error({error: 'Error de comunicación con el servidor'});
+        }
+      };
+      request.onerror = function() {
+        console.error({error: 'Error de comunicación con el servidor'});
+      };
+      request.send();
+    
+    </script>
+  </body>
+</html>

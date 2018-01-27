@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Ejemplo XX - Prototypes</title>
+  </head>
+  <body>
+    <script>
+      //GLOBAL
+      console.log(window);
+      console.log(this);
+
+      //FUNCION
+      function funcionA() {
+        /*'use strict';*/
+        return this;
+      }
+      console.log(funcionA());
+
+      //OBJETO
+      var miObjeto = {
+        color: 'rojo',
+        tamano: 'grande',
+        cantidad: 10,
+        cuentaCantidad : function(){
+          return this.cantidad;
+        }
+      }
+      console.log(miObjeto.cuentaCantidad());
+
+      //VEAMOS SI SE PUEDE...
+      function establecerThis() {
+        this = 'Hola JS!';
+      }
+      console.log(establecerThis());
+    </script>
+  </body>
+</html>

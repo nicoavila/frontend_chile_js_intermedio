@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Ejemplo 02 - Explotar el Call Stack</title>
+  </head>
+  <body>
+
+    <img src="https://vignette.wikia.nocookie.net/bomberman/images/e/eb/Bomberman_2.jpg/revision/latest?cb=20110207172040" alt="Bomberman">
+
+    <script>
+      'use strict';
+
+      function llamar_saludo() {
+        console.log("Hola! Te haré explotar");
+        return llamar_saludo();
+      }
+
+      llamar_saludo();
+    </script>
+  </body>
+</html>

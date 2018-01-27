@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Ejemplo 03 - Stack Trace</title>
+  </head>
+  <body>
+
+    <h1>Revisa la consola 👀</h1>
+
+    <script>
+      'use strict';
+
+      function saltar() {
+        throw new Error('Oye... pero soy un navegador. No puedo saltar :(');
+      }
+
+      function prepararSalto() {
+        return saltar();
+      }
+
+      function pensarSalto() {
+        return prepararSalto();
+      }
+
+      pensarSalto();
+
+    </script>
+  </body>
+</html>

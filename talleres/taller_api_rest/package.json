@@ -1,0 +1,18 @@
+{
+  "name": "taller_api_rest",
+  "version": "1.0.0",
+  "description": "Taller JavaScript Intermedio - Avanzado: Consumiendo una API REST",
+  "main": "index.js",
+  "scripts": {
+    "serve": "http-server"
+  },
+  "author": "Nicolas Avila <nicolasavila.a@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "bulma": "^0.6.2",
+    "chart.js": "^2.7.1"
+  },
+  "devDependencies": {
+    "http-server": "^0.11.1"
+  }
+}

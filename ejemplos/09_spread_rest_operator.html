@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Ejemplo XX - Spread y Rest Operators</title>
+  </head>
+  <body>
+
+    <script>
+      //ARRAYS
+      let miArrayDeNumeros = [1, 2, 3, 4 ,5 ,6 , 7, 8, 9, 10];
+      
+      let arrayCopia = [];
+      arrayCopia.push(...miArrayDeNumeros);
+      console.log(arrayCopia);
+
+      //FUNCIONES
+      let miFuncionQueNombra = function(...nombres) {
+        console.log(nombres);
+      }
+      miFuncionQueNombra('Nico', 'Maria Paz', 'Cristobal', 'Magdalena', 'Alberto');
+    </script>
+  </body>
+</html>

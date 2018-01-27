@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Ejemplo 04 - Tipos de datos</title>
+  </head>
+  <body>
+
+    <h1>Revisa la consola 👀</h1>
+
+    <script>
+      'use strict';
+
+      function tipos() {
+        var saludo = 'Hola mundo!';
+        console.log(typeof saludo);
+
+        var numero = 3.1416;
+        console.log(typeof numero);
+
+        var estaNublado = false;
+        console.log(typeof estaNublado);
+
+        var nadaDeInformacion = null;
+        console.log(typeof nadaDeInformacion);
+
+        var variableDeclarada;
+        console.log(variableDeclarada);
+
+        var miAuto = {
+          color: 'Rojo',
+          ruedas: 4,
+          puertas: 3,
+          encendido: false
+        }
+        console.log(typeof miAuto);
+
+        var miSimbolo = Symbol('MiSuperSimbolo!');
+        console.log(typeof miSimbolo);
+      }
+
+      tipos();
+
+    </script>
+  </body>
+</html>

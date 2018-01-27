@@ -1,0 +1,11 @@
+html, body { height: 100vh; }
+body {
+  background: #A2F3A4;
+  height: 100vh;
+}
+
+#areaDibujo {
+  display: block;
+  margin: 0px auto;
+  border: 1px solid #CECECE;
+}
